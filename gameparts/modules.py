@@ -1,4 +1,3 @@
 def save_result(res):
-    file = open('results.txt', 'a')
-    file.write(res + '\n')
-    file.close()
+    with open('results.txt', 'a', encoding='utf-8') as f:
+        f.write(res)
